@@ -1,72 +1,65 @@
-
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-#red{
-	display: flex;
-	justify-content: center;
-	align-items: center;	
-	font-size: 20px;
+/* LinkedIn */
+#red {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
 }
 
-a{
-	color: #7980C2;
-	margin-right: 20px;
+.linkedin-btn {
+  color: #7980C2;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s;
 }
 
-.nav.link:hover{
-	color: #7980C2;
+.linkedin-btn:hover {
+  color: #000;
 }
 
 
-#menu-icon {
-  padding-right: 100px;
-  margin-top: 80px;
+.icono-box {
+  background: white;
+  padding: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  height: 100%;
+  text-align: center;
 }
 
 .icono-img {
-  max-width: 150px;    /* tamaño adaptable */
+  width: 250px;
   height: auto;
+  margin-bottom: 8px;
 }
 
-.icono-box {
-  text-align: center;
-  margin-bottom: 20px;
+.icono-box h6 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.icono-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #menu-icon .row {
+    margin-bottom: 10px;
+  }
 }
 
 .intro{
-	padding: 100px;
-	text-align: center; important!
-}
-
-.footer{
-    background: #7d7fd1;
-    padding: 30px 0;
-}
-
-.footer-menu{
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-menu a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.footer-icons a{
-    color: white;
-    font-size: 32px;
-    margin-left: 20px;
-}
+  font-size: 20px;
+  padding: 100px;
+  text-align: center; important!
 
 }
+
 
 .intro-productos p{
     max-width: 1000px;
@@ -128,3 +121,28 @@ a{
 }
 
 
+.footer{
+    background: #7d7fd1;
+    padding: 30px 0;
+}
+
+.footer-menu{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer-icons a{
+    color: white;
+    font-size: 32px;
+    margin-left: 50px;
+}
